@@ -1,81 +1,53 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BizzaERP</title>
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        /* Ensure the main content does not overlap */
-        main {
-            margin-left: 200px; /* Adjust based on sidenav width */
-            padding: 20px;
-        }
-        footer {
-            margin-left: 200px; /* Match main content */
-            padding: 10px;
-        }
-        .sidenav {
-            width: 200px; /* Adjust width as needed */
-        }
-        /* Set navbar and sidenav logo-container height */
-        nav {
-            height: 64px; /* Standard Materialize navbar height */
-            line-height: 64px; /* Align text vertically */
-        }
-        .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 64px; /* Match navbar height */
-            font-size: 18px;
-            font-weight: bold;
-            padding-left: 16px;
-        }
-        .logo-container i {
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/script.js"></script>
 </head>
+
 <body>
-
-    <!-- Side Navigation -->
-    <ul id="sidenav-left" class="sidenav sidenav-fixed">
-        <li>
-            <a href="#" class="logo-container brand-logo blue darken-3 white-text">
-                <i class="material-icons white-text">spa</i> Admin
-            </a>
-        </li>
-        <li><a href="#" class="waves-effect"><i class="material-icons">dashboard</i>Dashboard</a></li>
-        <li><a href="#" class="waves-effect"><i class="material-icons">settings</i>Settings</a></li>
-    </ul>
-
-    <!-- Top Navbar -->
-    <nav class="blue darken-3">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo" style="margin-left: 20px;">BizzaERP</a>
+    <div class="navbar border-red">
+        <a href="#default" class="logo">BizzaERP</a>
+        <span id="title">title</span>
+        <div class="navbar-right">
+            <a class="button" href="#account">Account</a>
         </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main>
-        <h4>Welcome to BizzaERP</h4>
-        <p>Main content goes here.</p>
-    </main>
-
-    <!-- Footer -->
-    <footer class="page-footer blue darken-3">
-        <div class="container">
-            <p class="white-text">© 2025 BizzaERP</p>
+    </div>
+    <div class="content border-magenta">
+        <div class="left-sidebar border-blue">
+            <ul>
+                <li><a id="dashboard" href="#">Dashboard</a></li>
+                <li><a id="products" href="#">Products</a></li>
+                <li><a id="orders" href="#">Orders</a></li>
+                <li><a id="customers" href="#">Customers</a></li>
+                <li><a id="suppliers" href="#">Suppliers</a></li>
+                <li><a id="employees" href="#">Employees</a></li>
+                <li><a id="reports" href="#">Reports</a></li>
+                <li><a id="settings" href="#">Settings</a></li>
+            </ul>
         </div>
-    </footer>
-
-    <!-- Materialize JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+        <div class="content-main border-green">
+            <ul class="breadcrumb border-orange">
+                <button>back</button>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">Summer 15</a></li>
+                <li>Italy</li>
+            </ul>
+            <div class="btn-group border-purple">
+                <button>btn1</button>
+                <button>btn2</button>
+                <button>btn3</button>
+            </div>
+            <div class="content-body border-black">
+                <h1>Content</h1>
+                <p>more content</p>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
 
-<!-- I made slight changes but no effect the sidenav logo container is smaller than the main top menubar -->
+</html>

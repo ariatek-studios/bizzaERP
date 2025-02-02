@@ -1,4 +1,72 @@
-.body-container {
+/* test */
+* {
+    margin: 2px;
+}
+
+.border-red {
+    border: 2px solid red;
+}
+
+.border-magenta {
+    border: 2px solid magenta;
+}
+
+.border-blue {
+    border: 2px solid blue;
+}
+
+.border-green {
+    border: 2px solid green;
+}
+
+.border-orange {
+    border: 2px solid orange;
+}
+
+.border-purple {
+    border: 2px solid purple;
+}
+
+.border-black {
+    border: 2px solid black;
+}
+
+/* CSS Stylesheet */
+/* Navbar */
+.navbar {
+    display: flex;
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+
+.content {
+    display: flex;
+}
+
+.content-main {
+    flex: 1;
+}
+
+ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    color: black;
+    content: "/\00a0";
+}
+
+.btn-group {
+    display: flex;
+}
+
+.content-body {
     height: 100vh;
-    padding-top: 60px;
 }
